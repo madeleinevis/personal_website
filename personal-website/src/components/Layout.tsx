@@ -13,17 +13,21 @@ import Body from "./Body";
 
 const Layout = () => {
     const classes = MainStyle();
-    return(<Grid container className={classes.root}>
-        <Grid item xs={12}>
-            <Header/>
-        </Grid>
-        <Grid item xs={12}>
-            <Body/>
-        </Grid>
-        <Grid item xs={12}>
-            <Footer/>
-        </Grid>
-    </Grid>);
+    return(
+        <React.Fragment>
+            <Grid container className={classes.root}>
+                <Grid item xs={12}>
+                    <Header/>
+                </Grid>
+                <Grid item xs={12}>
+                    <Body/>
+                </Grid>
+                <Grid item xs={12}>
+                    <Footer/>
+                </Grid>
+            </Grid>
+        </React.Fragment>
+        );
 };
 
 export default Layout;

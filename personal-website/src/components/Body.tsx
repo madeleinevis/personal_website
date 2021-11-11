@@ -7,14 +7,18 @@ import MainStyle from "../styles/MainStyle";
 
 const Body = () => {
     const classes = MainStyle();
-    return(<Grid container className={classes.content}>
-        <Grid item xs={2}>
-            <SideProfile/>
-        </Grid>
-        <Grid item xs={10}>
-            <MainProfile/>
-        </Grid>
-    </Grid>);
+    return(
+        <React.Fragment>
+            <Grid container className={classes.content}>
+                <Grid item xs={2}>
+                    <SideProfile/>
+                </Grid>
+                <Grid item xs={10}>
+                    <MainProfile/>
+                </Grid>
+            </Grid>
+        </React.Fragment>
+        );
 };
 
 export default Body;

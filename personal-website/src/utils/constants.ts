@@ -1,9 +1,10 @@
 export const HEADER_TITLE = "Madeleine Vis - Full Languages Developer"
 export const FOOTER_TEXT = `${new Date().getFullYear()} - built by Madeleine Vis`
+
 // UI CONSTANTS
 export const FOOTER_HEIGHT = 30
 export const HEADER_HEIGHT = 60
-export const SIDE_MARGIN = 1000
+export const SIDE_MARGIN = 200
 
 // CONTACT DETAILS
 export const NAME = "Madeleine Vis"

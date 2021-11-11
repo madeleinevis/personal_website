@@ -1,17 +1,20 @@
 import Grid from "@material-ui/core/Grid";
 import React from "react";
-import PersonalInfo from "./PersonalInfo";
+import Languages from "./Languages";
+import Tools from "./Tools";
 
-const SideProfile = () => {
+const Stack = () => {
     return(
         <React.Fragment>
             <Grid container>
                 <Grid item xs={12}>
-                    <PersonalInfo/>
+                    <Languages/>
+                </Grid>
+                <Grid item xs={12}>
+                    <Tools/>
                 </Grid>
             </Grid>
         </React.Fragment>
-        );
+    );
 };
-
-export default SideProfile;
+export default Stack;
