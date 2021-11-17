@@ -1,12 +1,14 @@
 import React from "react";
 
 import { FOOTER_TEXT } from "../utils/constants";
+import MainStyle from "../styles/MainStyle";
 
 // interface Props {}
 
 const Footer = () => {
+    const classes = MainStyle();
     return (
-        <div>
+        <div className={classes.footer}>
             {FOOTER_TEXT}
         </div>
     );

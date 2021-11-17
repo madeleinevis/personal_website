@@ -1,19 +1,17 @@
-import Grid from "@material-ui/core/Grid";
-
 import React from "react";
 import SideProfile from "./side-profile/SideProfile";
 import MainProfile from "./main-profile/MainProfile";
-import MainStyle from "../styles/MainStyle";
+import {Grid} from "@mui/material";
 
 const Body = () => {
-    const classes = MainStyle();
+    // const classes = MainStyle();
     return(
         <React.Fragment>
-            <Grid container className={classes.content}>
-                <Grid item xs={2}>
+            <Grid container columnSpacing={1}>
+                <Grid item xs={3}>
                     <SideProfile/>
                 </Grid>
-                <Grid item xs={10}>
+                <Grid item xs={9}>
                     <MainProfile/>
                 </Grid>
             </Grid>

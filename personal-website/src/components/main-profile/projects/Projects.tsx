@@ -1,5 +1,6 @@
-import Grid from "@material-ui/core/Grid";
+
 import React from "react";
+import {Grid} from "@mui/material";
 
 const Projects = () => {
     return(
@@ -16,6 +17,9 @@ const Projects = () => {
                 </Grid>
                 <Grid item xs={12}>
                     <h5>Twitter Application with AWS Services</h5>
+                </Grid>
+                <Grid item xs={12}>
+                    <h5>Front-End Development - Online CV</h5>
                 </Grid>
             </Grid>
         </React.Fragment>
