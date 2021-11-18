@@ -2,38 +2,42 @@ import React from "react";
 import {DOB, EMAIL, GITHUB, LINKEDIN, LOCATION, NAME, PHONE} from "../../utils/constants";
 import profile_picture from "../../images/profile_picture.png"
 import MainStyle from "../../styles/MainStyle";
-import {Grid, Paper} from "@mui/material";
+import {Container, Grid} from "@mui/material";
+import Card from "../../styles/CardStyle";
 
 const PersonalInfo = () => {
     const classes = MainStyle();
     return(
         <React.Fragment>
+            <Container>
                 <Grid container spacing={1}>
                     <Grid item xs = {12}>
-                        <img src={profile_picture} alt={"Madeleine Vis"} className={classes.image}/>
+                        <img src={profile_picture} alt={"Madeleine Vis"} className={classes.profile_image}/>
                     </Grid>
                     <Grid item xs={12}>
-                        <Paper className={classes.card}>{NAME}</Paper>
+                        <Card>{NAME}</Card>
                     </Grid>
                     <Grid item xs={12}>
-                        <Paper className={classes.card}>{DOB}</Paper>
+                        <Card>{DOB}</Card>
                     </Grid>
                     <Grid item xs={12}>
-                        <Paper className={classes.card}>{LOCATION}</Paper>
+                        <Card>{LOCATION}</Card>
                     </Grid>
                     <Grid item xs={12}>
-                        <Paper className={classes.card}>{EMAIL}</Paper>
+                        <Card>{EMAIL}</Card>
                     </Grid>
                     <Grid item xs={12}>
-                        <Paper className={classes.card}>{PHONE}</Paper>
+                        <Card>{PHONE}</Card>
                     </Grid>
                     <Grid item xs={12}>
-                        <Paper className={classes.card}><a href={LINKEDIN}>LinkedIn</a></Paper>
+                        <Card><a href={LINKEDIN}>LinkedIn</a></Card>
                     </Grid>
                     <Grid item xs={12}>
-                        <Paper className={classes.card}><a href={GITHUB}>GitHub</a></Paper>
+                        <Card><a href={GITHUB}>GitHub</a></Card>
                     </Grid>
                 </Grid>
+            </Container>
+
 
         </React.Fragment>
         );

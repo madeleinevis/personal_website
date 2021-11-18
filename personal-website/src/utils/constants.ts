@@ -17,3 +17,10 @@ export const GITHUB = "https://github.com/madeleinevis"
 
 // FOOTER MARQUEE
 export const IMG = '☁️'
+
+// ABOUT ME
+export const ABOUTME = "A fresh-off-the-press fully stacked software engineer getting their hands dirty in AWS. " +
+    "A highly proficient Java developer, with a secret love for Python and Machine Learning. " +
+    "During my studies, I have led multiple small data-scient projects with external clients. " +
+    "For my dissertation, I have developed a handicap tool to aid students on campus. " +
+    "Massive F1 nerd #Max.";

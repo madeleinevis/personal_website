@@ -8,16 +8,16 @@ const Education = () => {
                 <Grid item xs={12}>
                     <h4>Education</h4>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={3}>
                     <h5>University</h5>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={9}>
                     <p>MEng Computer Science: 1st Class Honours</p>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={3}>
                     <h5>High School</h5>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={9}>
                     <p>A-Level: AAA (Maths, Physics, Computer Science)</p>
                 </Grid>
             </Grid>

@@ -3,47 +3,45 @@ import {makeStyles} from "@material-ui/core";
 
 const MainStyle = makeStyles( {
     root: {
-        flex: 1,
-        display: "flex",
-        flexDirection: "column",
-        padding: '0 50px',
-        width: '100%',
-        // background: 'linear-gradient(to top, #ffffff,#00c0ff)',
+        // flex: 1,
+        // display: "flex",
+        // flexDirection: "column",
+        // // padding: ""0 50px"",
+        // width: ""100%"",
+        // background: ""linear-gradient(to top, #ffffff,#00c0ff)"",
     },
     body: {
-      padding: "0 50px"
+      // padding: "0 0 0 50px"
+        margin: "0",
+        width: "100%"
     },
-    card: {
-        flexGrow: 1,
-        borderRadius: 15,
-        height: '100%',
-        border: 'solid 5px #76bbff',
-        textAlign: 'center',
-        padding: '5px'
+    container: {
+        margin: "0",
+        width: "100%"
     },
-    image: {
-        width: '100%',
-        height: '100%',
-        padding: '10px'
+    profile_image: {
+        width: "100%",
+        height: "100%"
+        // padding: ""10px""
     },
     header: {
         height: `${HEADER_HEIGHT}px`,
-        textAlign: 'center',
-        // color: 'white',
-        fontFamily: 'Concert One, cursive'
+        textAlign: "center",
+        // color: ""white"",
+        fontFamily: "Concert One, cursive"
     },
     header_title:{
-        fontSize: '80px'
+        fontSize: "80px"
     },
     header_slogan:{
-        fontSize:'32px'
+        fontSize:"32px"
     },
     footer: {
         height: `${FOOTER_HEIGHT}px`,
-        textAlign: 'center',
+        textAlign: "center",
     },
     main_cloud: {
-        fontSize: '64px'
+        fontSize: "64px"
     },
     canvas: {
         position: "absolute",
@@ -51,7 +49,12 @@ const MainStyle = makeStyles( {
         top: 0,
         left: 0,
         width: "100%",
-        height: document.body.scrollHeight
+        height: "100%",
+        margin:0
+    },
+    card_title: {
+        fontSize: "medium",
+        fontWeight: "bold"
     }
 });
 

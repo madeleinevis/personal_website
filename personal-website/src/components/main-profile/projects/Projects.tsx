@@ -1,11 +1,13 @@
 
 import React from "react";
 import {Grid} from "@mui/material";
+import MainStyle from "../../../styles/MainStyle";
 
 const Projects = () => {
+    const classes = MainStyle();
     return(
         <React.Fragment>
-            <Grid container>
+            <Grid container className={classes.container}>
                 <Grid item xs={12}>
                     <h4>Projects</h4>
                 </Grid>
